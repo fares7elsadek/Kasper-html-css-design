@@ -934,3 +934,239 @@ header nav .toggle-menu{
     margin-bottom: -15px;
 }
 /* End Pricing */
+
+/* Start mailing */
+.mailing{
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
+    background-image: url('../images/subscribe.jpg');
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.mailing::after{
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(0 0 0 / 50%);
+    height: 100%;
+    width: 100%;
+}
+
+.mailing .container{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+   
+}
+
+@media (max-width:991px) {
+    .mailing .container{
+        flex-direction: column;
+    }
+}
+
+.mailing form{
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    width: 500px;
+}
+
+
+.mailing form i{
+    position: absolute;
+    font-size: 30px;
+    top: 15px;
+    left: 15px;
+}
+
+.mailing form input[type="email"]{
+    padding: 20px 20px 20px 60px;
+    background-color: transparent;
+    border:1px solid white;
+    caret-color: var(--main-color);
+    width: calc(100% - 130px);
+    border-right: none;
+}
+
+.mailing form input[type="email"]::placeholder{
+    color: white;
+}
+
+.mailing form input[type="submit"]{
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    border: 1px solid white;
+    border-left:none ;
+    width: 130px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.mailing form input[type="email"]:focus,
+.mailing form input[type="submit"]:focus{
+    outline: none;
+}
+.mailing p{
+    color: white;
+    line-height: 2;
+    margin-left: 50px;
+}
+
+@media (max-width:991px) {
+    .mailing p{
+        margin: 30px 0 0;
+    }
+}
+/* End mailing */
+
+/* Start Contact us */
+.contact-us{
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
+}
+
+.contact-us .content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-us .content form{
+    flex-basis: 70%;
+}
+
+@media (max-width:767px) {
+    .contact-us .content{
+        flex-direction:column;
+    }
+}
+
+.contact-us .content form input[type="text"],
+.contact-us .content form input[type="email"]{
+    padding: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    width: 100%;
+    caret-color: var(--main-color);
+}
+
+.contact-us .content textarea{
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: 200px;
+    caret-color: var(--main-color);
+    margin-bottom: 30px;
+}
+
+.contact-us .content input[type="submit"]{
+    padding: 20px;
+    background-color: var(--main-color);
+    border: none;
+    display: block;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    margin-left: auto;
+}
+
+.contact-us .content .information-text{
+    flex-basis: 25%;
+}
+
+@media (max-width:767px) {
+    .contact-us .content .information-text{
+        order: -1;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-us .content .information-text .box{
+        flex-basis: 47.5%;
+    }
+}
+
+
+.contact-us .content .information-text .box{
+    margin-bottom: 90px;
+}
+
+
+@media (max-width:767px) {
+    .contact-us .content .information-text .box{
+        margin-bottom: 30px;
+    }
+}
+
+.contact-us .content .information-text .box h4{
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contact-us .content .information-text .box p{
+    color: var(--paragraph-color);
+    padding-bottom: 10px;
+}
+/* End Contact us */
+
+/* Start footer */
+.footer{
+    padding-top:calc(var(--padding-section) / 2);
+    padding-bottom: calc(var(--padding-section) / 2);
+    background-image:url('../images/subscribe.jpg');
+    background-size: cover;
+    position: relative;
+    color:white;
+    text-align: center;
+}
+
+.footer::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top: 0;
+    background-color: rgb(0 0 0 / 70%);
+}
+
+.footer .container{
+    position: relative;
+    z-index: 2;
+}
+
+.footer .container img{
+    margin: 20px;
+}
+
+.footer .container p:not(.copyright){
+    width: fit-content;
+    margin: 20px auto;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    padding: 20px;
+}
+
+.footer .container .social-icons i{
+    padding: 15px;
+}
+
+.footer .container .social-icons{
+    margin-bottom: 60px;
+}
+
+.footer .container .copyright  span{
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+/* End footer */
